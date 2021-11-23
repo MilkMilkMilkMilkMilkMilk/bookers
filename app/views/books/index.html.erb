@@ -1,0 +1,12 @@
+<h1>Books</h1>
+<% @books.each do |book| %>
+  <p>Title</p>
+  <p>Body</p>
+
+  <span>
+    <%= link_to book.title, "/books/#{books.id}" %>
+    <p><a href="/books">show</a></p>
+    <p><a href="/books">edit</a></p>
+    <p><a href="/books">destroy</a></p>
+  </span>
+<% end %>
